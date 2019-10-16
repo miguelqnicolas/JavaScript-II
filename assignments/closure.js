@@ -4,6 +4,21 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+// difference between function test() and const test = function() **********
+
+function helloWorld() {
+	const phrase = 'Hello World!';
+	function smallHelloWorld() {
+		console.log(phrase);
+	}
+	smallHelloWorld();
+}
+
+helloWorld();
+
+// so you dont need to pass in an argument into small function?
+// and you need to call small function in bigger function?
+// in for loop, i = 0 or let i = 0?
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
